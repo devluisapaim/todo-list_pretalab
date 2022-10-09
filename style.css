@@ -1,0 +1,72 @@
+:root {
+    --satisfy: 'Satisfy', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: aliceblue; */
+    width: 1000px;
+    height: 500px;
+}
+
+.todolist {
+    background-color: #D9D9D9;
+    border: 1px solid #9747FF;
+
+    width: 80%;
+    height: 550px;
+
+    margin: 2em 30% 0;
+    
+    text-align: center;
+}
+
+.todolist img {
+    margin-top: 0.5em;
+}
+
+.todolist ul{
+    font-family: var(--satisfy);
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todolist button {
+    background-color: #B984FF;
+    border-radius: 10%;
+    border: none;
+
+    font-family: var(--satisfy);
+    font-size: larger;
+    padding: 0.5em;
+    
+    cursor: pointer;
+}
+
+#tasks {
+    background-color: #D9D9D9;
+    width: 90%;
+    height: 60%;
+
+    margin: 1em auto;
+}
+
+#tasks div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0;    
+
+    font-family: 'Arapey', serif;
+    font-size: large;
+}
+
+#tasks div img {
+    width: 2%;
+    cursor: pointer;
+}
