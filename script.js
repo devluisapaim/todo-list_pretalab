@@ -12,10 +12,12 @@ const tarefa = (id) => ` <div id="${id}">
 function addTask() {
     id++;
     height++;
+    
     console.log(height)
     if (height <= 8) {
         document.querySelector('#tasks').innerHTML += tarefa(id);
     }
+    
 }
 
 function removeTask(id) {

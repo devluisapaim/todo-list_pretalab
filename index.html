@@ -19,17 +19,27 @@
     <div id="todolist" class="todolist">
         <img src="./img/icon_logo.svg" alt="">
 
-        <ul>
-            <li>Feito?</li>
-            <li>Tarefa</li>
-            <li>Prazo</li>
-            <li>Excluir</li>
-        </ul>
+        <div id="tasklist">
+            <ul>
+                <li>Feito?</li>
+                <li>Tarefa</li>
+                <li>Prazo</li>
+                <li>Excluir</li>
+            </ul>
 
-        <div id="tasks"></div>
+            <div id="tasks"></div>
+        </div>
+        <!-- style="display: none;" -->
+        <div id="addTask1">
+        <form id="addTask">
+            <label class="formItem" for="tarefa">Tarefa</label>
+            <input class="formItem" id="tarefa" type="text" placeholder="Digite a descrição da tarefa">
+            <label class="formItem" for="prazo">Prazo</label>
+            <input class="formItem" id="prazo" type="text" value="" placeholder="Digite o prazo (dd/mm)">
+        </form>
+        </div>
 
         <button onclick="addTask()">Adicionar tarefa</button>
-
     </div>
     
 </body>

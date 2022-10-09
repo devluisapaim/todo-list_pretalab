@@ -72,3 +72,18 @@ body {
     width: 2%;
     cursor: pointer;
 }
+
+#addTask {
+    font-family: 'Arapey', serif;
+    font-size: x-large;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 1em auto;
+}
+
+.formItem {
+    margin: 0.5em 0;
+} 
