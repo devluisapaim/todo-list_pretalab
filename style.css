@@ -1,5 +1,7 @@
 :root {
-    --satisfy: 'Satisfy', cursive;
+    /* --satisfy: 'Satisfy', cursive; */
+    /* font-family: ; */
+    --satisfy: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {
@@ -31,34 +33,51 @@ body {
     margin-top: 0.5em;
 }
 
-.todolist ul{
+.addTask {
+    font-family: 'Arapey', serif;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 70%;
+    margin: 0 auto 2em;
+}
+
+.addTask .formInput {
+    width: 60%;
+}
+
+.addTask button {
+    background-color: #c296fb;
+    border-radius: 5%;
+    border: none;
+
+    font-family: var(--satisfy);
+    font-size: larger;
+    font-weight: lighter;
+    
+    padding: 0.5em;
+    width: 30%;
+    
+    cursor: pointer;
+}
+
+.taskList {
+    margin: auto;
+    border: #c296fb 1px solid;
+    width: 100%;
+}
+
+.listTitles {
+    width: 100%;
+
     font-family: var(--satisfy);
     font-size: x-large;
     display: flex;
     justify-content: space-around;
 }
 
-.todolist button {
-    background-color: #B984FF;
-    border-radius: 10%;
-    border: none;
-
-    font-family: var(--satisfy);
-    font-size: larger;
-    padding: 0.5em;
-    
-    cursor: pointer;
-}
-
-#tasks {
-    background-color: #e6e0e0;
-    width: 90%;
-    height: 60%;
-
-    margin: 1em auto;
-}
-
-#tasks div {
+.taskDescription {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,24 +85,22 @@ body {
 
     font-family: 'Arapey', serif;
     font-size: large;
+
+    /* width: 95%; */
 }
 
-#tasks div img {
+.taskDescription .taskDelete {
     width: 2%;
     cursor: pointer;
 }
 
-#addTask {
-    font-family: 'Arapey', serif;
-    font-size: x-large;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 50%;
-    margin: 1em auto;
+/* .taskCheck, .taskDelete{
+    width: 10%;
 }
 
-.formItem {
-    margin: 0.5em 0;
-} 
+.taskName {
+    width: 70%;
+}
+
+.taskDelete {}
+ */

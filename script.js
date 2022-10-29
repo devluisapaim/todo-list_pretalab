@@ -7,13 +7,12 @@ const data = {
 }
 
 /* const tarefa recebe e cria div para cada nova tarefa c/ prazo adicionada */
-const task = (id, novaTarefa, prazo) => ` <div>          
-                                            <input type="checkbox" onchange="checkTask(${id})" />
-                                            <p id="${id}">${novaTarefa}</p>
-                                            <p>${prazo}</p>
-                                            <img onclick="removeTask(${id})" src="./img/trash_icon.svg" alt="">                            
+const task = (id, task, deadline) => ` <div class="taskDescription">          
+                                            <input class="taskCheck" type="checkbox" onchange="checkTask(${id})" />
+                                            <p class="taskName" id="${id}">${task}</p>
+                                            <img class="taskDelete" onclick="removeTask(${id})" src="./img/trash_icon.svg" alt="">                            
                                         </div>` 
-
+                                            // <p>${deadline}</p>
 /* função que varia id, limita a quant de criação de tarefa a 8, 
 coleta o valor do input newTask e 
 chama a const/função tarefa passando o valor de id, newTask e o prazo*/
@@ -59,7 +58,7 @@ function addTask() {
     height++;
 
     const newTask = document.getElementById('newTask').value;
-    const deadline = document.querySelector('#deadline').value;
+    // const deadline = document.querySelector('#deadline').value;
 
     const taskList = localStorage.getItem('tasks-list');
     
@@ -67,17 +66,22 @@ function addTask() {
          return;
     }
     
-    if (height <= 8) {
-        document.querySelector('#tasks').innerHTML += task(id, newTask, deadline);
-    }    
+      
 
     if (taskList) {
         const newList = JSON.parse(taskList);
-        newList.push(newTask);
+        
+        console.log(newList)        
+        console.log(newList.length)        
+        if (newList.length <= 6) {
+            newList.push(newTask);
+            document.querySelector('#tasks').innerHTML += task(id, newTask);
+        }  
         data.editTasks(newList);
     } else {
         data.editTasks([newTask]);
     }
+
 }
 
 const removeTask = (id) => {    //deletar tarefa o clicar na imagem
