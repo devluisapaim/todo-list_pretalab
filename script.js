@@ -8,7 +8,7 @@ const data = {
 
 /* const tarefa recebe e cria div para cada nova tarefa c/ prazo adicionada */
 const task = (id, novaTarefa, prazo) => ` <div>          
-                                            <input type="checkbox" />
+                                            <input type="checkbox" onchange="checkTask(${id})" />
                                             <p id="${id}">${novaTarefa}</p>
                                             <p>${prazo}</p>
                                             <img onclick="removeTask(${id})" src="./img/trash_icon.svg" alt="">                            
@@ -17,6 +17,16 @@ const task = (id, novaTarefa, prazo) => ` <div>
 /* função que varia id, limita a quant de criação de tarefa a 8, 
 coleta o valor do input newTask e 
 chama a const/função tarefa passando o valor de id, newTask e o prazo*/
+
+const checkTask = (id) => {
+    const strike = document.getElementById(`strike${id}`);
+    if (strike) {
+        document.getElementById(id).innerText = strike.innerHTML;
+    } else {
+        const taskDone = document.getElementById(id).innerHTML;
+        document.getElementById(id).innerHTML = `<strike id='strike${id}'>${taskDone}</strike>`;
+    }
+}
 
 function showList() {
     const tasks = data.colectTasks();
