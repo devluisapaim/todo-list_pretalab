@@ -8,8 +8,8 @@
 }
 
 body {
-    background: url(/img/pexels-photo-2351844.jpeg);
-    
+    background: url(/img/pexels-lumn-316466.jpg) center / cover no-repeat;
+
     width: 1000px;
     height: 500px;
 }
