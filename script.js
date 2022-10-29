@@ -28,6 +28,22 @@ function showList() {
     }
 }
 
+const validateTask = (newTask) => {
+    let existingTask = false;
+    const taskList = data.colectTasks();
+
+    if (taskList) {
+        taskList.map(task => {
+            if (task === newTask) {
+                existingTask = true;
+                alert('Tareja já existente. Adicione nova!');
+            }
+        });
+    }
+
+    return existingTask;
+}
+
 function addTask() {            
     id++;
     height++;
@@ -36,9 +52,10 @@ function addTask() {
     const deadline = document.querySelector('#deadline').value;
 
     const taskList = localStorage.getItem('tasks-list');
-    // if (validarTarefa(newTask)){
-    //      return;
-    // }
+    
+    if (validateTask(newTask)){
+         return;
+    }
     
     if (height <= 8) {
         document.querySelector('#tasks').innerHTML += task(id, newTask, deadline);
