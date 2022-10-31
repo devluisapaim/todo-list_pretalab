@@ -81,12 +81,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1em 0;    
+    margin: 1em auto;    
 
     font-family: 'Arapey', serif;
     font-size: large;
-
-    /* width: 95%; */
 }
 
 .taskDescription .taskDelete {
@@ -94,13 +92,11 @@ body {
     cursor: pointer;
 }
 
-/* .taskCheck, .taskDelete{
-    width: 10%;
+#tasks {
+    
 }
 
-.taskName {
-    width: 70%;
-}
 
-.taskDelete {}
- */
+
+
+
