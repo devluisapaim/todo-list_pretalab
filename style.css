@@ -1,6 +1,4 @@
 :root {
-    /* --satisfy: 'Satisfy', cursive; */
-    /* font-family: ; */
     --satisfy: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -10,7 +8,7 @@
 }
 
 body {
-    background: url(/img/pexels-lumn-316466.jpg) center / cover no-repeat;
+    background: url(/img/pexels-jessica-lewis-creative-3361483.jpg) center / cover no-repeat;
 
     width: 1000px;
     height: 500px;
@@ -18,7 +16,6 @@ body {
 
 .todolist {
     background-color: #e6e0e0;
-    /* border: 1px solid #9747FF; */
     border-radius: 20px;
 
     width: 80%;
