@@ -82,14 +82,13 @@ body {
     justify-content: space-around;
     align-items: center;
     margin: 1em auto; 
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
 
     font-family: 'Arapey', serif;
-    font-size: large;
+    font-size: 19px;
 
     width: 85%;
     border-bottom: 1px gray dotted;
-    /* border: green 2px solid; */
 }
 
 .taskDescription .taskDelete {
