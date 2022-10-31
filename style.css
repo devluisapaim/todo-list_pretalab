@@ -19,7 +19,7 @@ body {
 .todolist {
     background-color: #e6e0e0;
     /* border: 1px solid #9747FF; */
-    border-radius: 10%;
+    border-radius: 20px;
 
     width: 80%;
     height: 550px;
