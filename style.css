@@ -29,7 +29,7 @@ body {
     text-align: center;
 }
 
-.todolist img {
+.todolist .logo {
     margin-top: 0.5em;
 }
 
@@ -66,6 +66,7 @@ body {
     margin: auto;
     border: #c296fb 1px solid;
     width: 100%;
+    max-height: 375px;
 }
 
 .listTitles {
@@ -81,26 +82,27 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 1em 0;    
+    margin: 1em auto; 
+    padding-bottom: 0.5em;
 
     font-family: 'Arapey', serif;
     font-size: large;
 
-    /* width: 95%; */
+    width: 85%;
+    border-bottom: 1px gray dotted;
+    /* border: green 2px solid; */
 }
+
 
 .taskDescription .taskDelete {
     width: 2%;
     cursor: pointer;
 }
 
-/* .taskCheck, .taskDelete{
-    width: 10%;
-}
+
 
 .taskName {
-    width: 70%;
+    width: 45%;
 }
 
-.taskDelete {}
- */
+

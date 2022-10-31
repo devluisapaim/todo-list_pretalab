@@ -1,5 +1,7 @@
 let id = 0;
 let height = 0; // no máximo 8 captar a altura de cada div, somar à variavel a cada adição e condicionar a adição até a soma igualar a altura total de tasks
+// let altura = document.querySelector('.taskList').style.max-height;
+// console.log(altura)      LIMITAR nº de entradas a altura ;
 
 const data = {
     colectTasks: () => JSON.parse(localStorage.getItem('tasks-list')),
@@ -43,10 +45,12 @@ const validateTask = (newTask) => {
 
     if (taskList) {
         taskList.map(task => {
-            if (task === newTask) {
+            /*if (newTask === '') {   VALIDAR SE O CAMPO NÃO ESTÁ VAZIO
+                alert('Digite a descrição de uma tarefa.')
+            }*/ if (task === newTask) {
                 existingTask = true;
                 alert('Tareja já existente. Adicione nova!');
-            }
+            } 
         });
     }
 
@@ -58,34 +62,27 @@ function addTask() {
     height++;
 
     const newTask = document.getElementById('newTask').value;
-    // const deadline = document.querySelector('#deadline').value;
-
     const taskList = localStorage.getItem('tasks-list');
     
     if (validateTask(newTask)){
          return;
-    }
-    
-      
+    }     
 
     if (taskList) {
         const newList = JSON.parse(taskList);
         
-        console.log(newList)        
-        console.log(newList.length)        
         if (newList.length <= 6) {
             newList.push(newTask);
             document.querySelector('#tasks').innerHTML += task(id, newTask);
-        }  
+        } 
         data.editTasks(newList);
     } else {
         data.editTasks([newTask]);
     }
-
 }
 
 const removeTask = (id) => {    //deletar tarefa o clicar na imagem
-    //descobrir como "pegar" da task em questão
+    // "pega" a task em questão
     const deletedTask = document.getElementById(id).innerHTML;
     const tasksList = data.colectTasks();
     //cria nova lista (filtrando/removendo) sem a task deletada
@@ -93,9 +90,6 @@ const removeTask = (id) => {    //deletar tarefa o clicar na imagem
     data.editTasks(newTaskList);
     document.querySelector('#tasks').innerHTML = '';
     showList(); 
-
-    /*Na aula, Nath add em um array, cria um novo array com os nomes e
-     manipula este para excluir o desejado; usando filter e condicional */
 }
 
 showList();
