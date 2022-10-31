@@ -50,7 +50,9 @@ const validateTask = (newTask) => {
             }*/ if (task === newTask) {
                 existingTask = true;
                 alert('Tareja já existente. Adicione nova!');
-            } 
+            } if (newTask === '') {     //CONFERIR
+                alert('Digite a descrição de uma tarefa.');
+            }
         });
     }
 
@@ -74,7 +76,9 @@ function addTask() {
         if (newList.length <= 6) {
             newList.push(newTask);
             document.querySelector('#tasks').innerHTML += task(id, newTask);
-        } 
+        } else {
+            alert('Limite de tarefas atingido. Exclua as atividades concluídas!')
+        }
         data.editTasks(newList);
     } else {
         data.editTasks([newTask]);
