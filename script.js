@@ -50,9 +50,9 @@ const validateTask = (newTask) => {
             }*/ if (task === newTask) {
                 existingTask = true;
                 alert('Tareja já existente. Adicione nova!');
-            } if (newTask === '') {     //CONFERIR
+            } /*if (newTask === '') {     //CONFERIR
                 alert('Digite a descrição de uma tarefa.');
-            }
+            }   NÂO deu certo*/ 
         });
     }
 

@@ -64,7 +64,6 @@ body {
 
 .taskList {
     margin: auto;
-    border: #c296fb 1px solid;
     width: 100%;
     max-height: 375px;
 }
@@ -93,13 +92,10 @@ body {
     /* border: green 2px solid; */
 }
 
-
 .taskDescription .taskDelete {
     width: 2%;
     cursor: pointer;
 }
-
-
 
 .taskName {
     width: 45%;
