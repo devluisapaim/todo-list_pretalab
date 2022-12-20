@@ -1,6 +1,11 @@
 ## Projeto
 ### `To-do List`
 
+<p align="center">
+    <img src="/img/todolist.png/" alt="Imagem da aplicação">
+</p>
+<br />
+
 > ⚠️ Neste site, eu treino a aplicação dos conceitos fundamentais de JavaScript que aprendi durante o módulo de JavaScript do PretaLab.
 <br />
 <!-- 
@@ -12,14 +17,8 @@
 O site já está no ar e você pode acessar aqui: [To-do List!](https://todolist-luisa.netlify.app/)
 <br />
 
-<p align="center">
-    <img src="/img/todolist.png/" alt="Imagem da aplicação">
-</p>
-
-<br />
 
 <p>🖌️ Design do projeto no Figma: <a href="https://www.figma.com/file/sH1hchG6lhwiVfV4pAfVgH/Alura-Challenge---Desafio-2---L%C3%B3gica-(Copy)?node-id=10%3A158" target="_blank">aqui</a>.</p>
-
 <br />
 
 # 🧠 Contexto
