@@ -1,12 +1,50 @@
-#To-do List!
+## Projeto
+### `To-do List`
+
+> ⚠️ Neste site, eu treino a aplicação dos conceitos fundamentais de JavaScript que aprendi durante o módulo de JavaScript do PretaLab.
+<br />
+<!-- 
+#### Resumo dos conteúdos aplicados
+* Canva;
+* Funções;
+* 
+* Responsivo para celular e tablet. -->
+O site já está no ar e você pode acessar aqui: [To-do List!](https://todolist-luisa.netlify.app/)
+<br />
+
+<p align="center">
+    <img src="/img/todolist.png/" alt="Imagem da aplicação">
+</p>
+
+<br />
+
+<p>🖌️ Design do projeto no Figma: <a href="https://www.figma.com/file/sH1hchG6lhwiVfV4pAfVgH/Alura-Challenge---Desafio-2---L%C3%B3gica-(Copy)?node-id=10%3A158" target="_blank">aqui</a>.</p>
+
+<br />
+
+# 🧠 Contexto
+
+O objetivo era criar uma aplicação usando JavaScript, que permitisse registrar atividades a serem realizadas, e marcá-las como concluídas quando realizadas.
+<br />
 
 
+### `Tecnologias usadas`
 
+| Ferramenta | Descrição |
+| --- | --- |
+| `HTML/CSS` | estruturação e estilização da aplicação|
+| `JavaScript` | interatividade e lógica da aplicação|
+| `Figma` | design do projeto|
+| `Github` | Hospedagem do código fonte integrado com gerenciador de versionamento|
+| `Netlify` | Hospedagem para o site|
+<br />
 
-Projeto no [Figma] (https://www.figma.com/file/mQCpSLQhvNs31oCOA5szgE/to-do-list?node-id=8%3A110);
+_Foi incrível compartilhar essa jornada com você! Qualquer dúvida ou sugestão, chama no contatinho!_
 
-Projeto no [Github] (https://github.com/devluisapaim/todo-list_pretalab.git);
+### Vamos nos conectar?
 
-Site [hospedado] (https://todolist-luisa.netlify.app/)
+- [linkedin](https://www.linkedin.com/in/luisacristinaferreira/)
+- [github](https://github.com/devluisapaim)
 
-<img src="./img/todolist.png" />
+<br />
+Feito com 💜 por Luísa Paim.
